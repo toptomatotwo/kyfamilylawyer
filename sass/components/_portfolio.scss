@@ -1,0 +1,234 @@
+/*----------------------------------------------------------------------------------*/
+/*  5.  Portfolio Content Styles
+/*----------------------------------------------------------------------------------*/
+
+.page-template-template-portfolio-php #primary,
+.tax-portfolio-type #primary {
+    background: transparent url(images/bg-portfolio-dots.gif) 0 -1px repeat-y;
+    width: 100%;
+}
+
+.page-template-template-portfolio-php .page-header,
+.tax-portfolio-type .page-header { margin-right: 20px;}
+
+.page-template-template-portfolio-php .hentry,
+.tax-portfolio-type .hentry,
+.tz-recent-portfolios-widget li {
+    background: #f7f7f8;
+    border-bottom: none;
+    float: left;
+    margin: 0 20px 48px 0;
+    padding: 0;
+    width: 220px;
+    height: 215px;
+}
+
+.page-template-template-portfolio-php .last,
+.tax-portfolio-type .last { margin-right: 0; }
+
+.page-template-template-portfolio-php .post-thumb,
+.tax-portfolio-type .post-thumb,
+.recent-work .post-thumb,
+.portfolio-related .post-thumb,
+.tz-recent-portfolios-widget .post-thumb {
+    margin: 0;
+    position: relative;
+}
+
+.page-template-template-portfolio-php .post-thumb a,
+.tax-portfolio-type .post-thumb a,
+.recent-work .post-thumb a,
+.portfolio-related .post-thumb a,
+.tz-recent-portfolios-widget .post-thumb a {
+    background-color: #ffd62c;
+    border-bottom: none;
+    display: block;
+    height: 140px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 220px;
+}
+
+.page-template-template-portfolio-php .post-thumb a:hover img,
+.tax-portfolio-type .post-thumb a:hover img,
+.recent-work .post-thumb a:hover img,
+.portfolio-related .post-thumb a:hover img,
+.tz-recent-portfolios-widget .post-thumb a:hover img { opacity: .2; }
+
+.page-template-template-portfolio-php .post-thumb-overlay,
+.tax-portfolio-type .post-thumb-overlay,
+.recent-work .post-thumb-overlay,
+.portfolio-related .post-thumb-overlay,
+.tz-recent-portfolios-widget .post-thumb-overlay {
+    background-color: #333;
+    color: #fff;
+    display: none;
+    padding: 2px 6px;
+    position: absolute;
+    top: 43%;
+    left: 32%;
+}
+
+.page-template-template-portfolio-php a:hover .post-thumb-overlay,
+.tax-portfolio-type a:hover .post-thumb-overlay,
+.recent-work a:hover .post-thumb-overlay,
+.portfolio-related a:hover .post-thumb-overlay,
+.tz-recent-portfolios-widget a:hover .post-thumb-overlay {
+    display: block;
+    z-index: 99;
+}
+
+.page-template-template-portfolio-php .hentry .entry-title,
+.page-template-template-portfolio-php .hentry .entry-title a,
+.tax-portfolio-type .hentry .entry-title,
+.tax-portfolio-type .hentry .entry-title a,
+.recent-work .entry-title,
+.recent-work .entry-title a,
+.portfolio-related .entry-title,
+.portfolio-related .entry-title a,
+.tz-recent-portfolios-widget .entry-title,
+.tz-recent-portfolios-widget .entry-title a {
+    font-size: 13px;
+    line-height: 20px;
+    margin: 15px 0 2px;
+    text-align: center;
+}
+
+.page-template-template-portfolio-php .hentry .entry-meta,
+.tax-portfolio-type .hentry .entry-meta,
+.tz-recent-portfolios-widget .entry-meta {
+    left: auto;
+    position: static;
+    text-align: center;
+    width: auto;
+}
+
+.page-template-template-portfolio-php .page-title,
+.tax-portfolio-type .page-title { display: inline-block; }
+
+#sort-by { float: right; }
+
+.ie7 #sort-by {
+    position: relative;
+    top: -20px;
+    right: -18px;
+}
+
+#sort-by li {
+    background: transparent url(images/bg-widget-title.gif) 0 5px no-repeat;
+    float: left;
+    padding-left: 13px;
+    margin-left: 7px;
+}
+
+#sort-by li:first-child { background: none; }
+
+#sort-by a {
+    border-bottom: none;
+    color: #555;
+    padding: 2px 5px;
+    margin: 0;
+}
+
+#sort-by a.active { background-color: #ffd62c; }
+
+
+/* Single Portfolio -----------------------------------*/
+
+.single-portfolio #primary {
+    background: transparent url(images/dots.gif) 0 100% repeat-x;
+    width: 100%;
+}
+
+.single-portfolio .hentry {
+    border-bottom: none;
+    margin: 0;
+}
+
+.single-portfolio .image-frame { margin-bottom: 20px; }
+
+.single-portfolio .entry-content {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 20px;
+    -moz-column-count: 20px;
+    column-count: 20px;
+    padding-left: 240px;
+    position: relative;
+}
+
+.single-portfolio .entry-content .column { width: 330px !important; }
+
+.single-portfolio .entry-content .first { margin-right: 20px; }
+
+.single-portfolio .entry-content .entry-meta {
+    left: 0;
+    width: 220px;
+}
+
+.gecko.single-portfolio .entry-content .entry-meta {
+    float: left;
+    margin-left: -240px;
+    position: static;
+}
+
+.single-portfolio .entry-meta h5 {
+    display: inline;
+    margin-right: 3px;
+}
+
+.single-portfolio .entry-meta span { margin-bottom: 0; }
+
+.single-portfolio .jp-progress-container { width: 790px; }
+
+.single-portfolio .jp-progress { width: 788px; }
+
+
+/* Related Portfolios -------------------------------------*/
+
+.portfolio-related {
+    background: #fff url(images/bg-content-dots.gif) 0 100% no-repeat;
+    margin: 10px 0 10px;
+    padding: 25px 20px 20px;
+}
+
+.related-title {
+    background: #fff url(images/dots.gif) 0 8px repeat-x;
+    font-size: 12px;
+}
+
+.related-title span {
+    background: #fff url(images/bg-widget-title.gif) 0 3px no-repeat;
+    padding-left: 14px;
+    padding-right: 10px;
+}
+
+.recent-work ul,
+.portfolio-related ul { margin-left: 0; }
+
+.recent-work li,
+.portfolio-related li {
+    background: #f7f7f8;
+    border-bottom: none;
+    float: left;
+    margin: 0 20px 30px 0;
+    padding: 0;
+    position: relative;
+    width: 220px;
+    height: 215px;
+}
+
+.recent-work li.last,
+.portfolio-related li.last { margin-right: 0; }
+
+.recent-work li .entry-meta,
+.portfolio-related li .entry-meta {
+    text-align: center;
+    width: 220px;
+    bottom: 15px;
+    top: auto;
+    left: auto;
+}
+

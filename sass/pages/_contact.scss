@@ -1,0 +1,54 @@
+/* Contact Template --------------------------------------*/
+
+body.page-template-template-contact #primary {
+    padding-bottom: 2rem;
+}
+
+.contactform { margin-left: 0; }
+
+.contactform li { list-style-type: none; }
+
+.contactform li label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contactform li input[type="text"] {
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.contactform li textarea {
+    width: 96.5%;
+    height: 200px;
+    margin-bottom:15px;
+}
+
+.contactform li button {
+    float: right;
+    font-size: 13px;
+}
+
+label.error { color: red; }
+
+
+
+/* MOVED TO PAGES
+.home-callout .simpleimage, .home-callout .widget_simpleimage {
+    display:inline;
+}
+.home-callout {
+    text-align:center;
+}
+.home-callout .widget_simpleimage {
+    margin-right:16px;
+}
+.home-callout .simpleimage img, .home-callout .widget_simpleimage img {
+    vertical-align:baseline;
+    max-width:456px;
+}
+
+.home-callout .widget a {
+    padding:0;
+}
+*/

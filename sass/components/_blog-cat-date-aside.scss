@@ -1,0 +1,141 @@
+/*SIDEBAR FOR BLOG AND SINGLE */
+body.blog .aside {
+        grid-row-start:    two;
+        grid-row-end:      two;
+        grid-column-start: two;
+        grid-column-end:   two;
+    }
+      
+#sidebar.aside {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-flow: column;
+    padding-top: 2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+#sidebar.aside .widget_text { /* #text-5 ABOUT HOLLY*/
+    font-size: 2.2rem;    
+}
+
+#sidebar.aside #text-5 /*h3*/.widget-title:first-of-type {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+}
+
+#sidebar.aside .widget_text, #sidebar.aside .widget_categories, #sidebar.aside .widget_archive {
+  padding-left: 0;
+  width: 100%;
+}
+
+#sidebar.aside #text-5 .textwidget { /*ABOUT HOLLY*/
+    font-family: 'Cabin', sans;
+    line-height: 1.4;
+    //width: 75%;
+    width: 100%;
+}
+
+.about-tel-link {
+    color: $accent !important;
+}
+
+.about-tel-link:hover {
+    color: $hover !important;
+}
+
+#sidebar #search-3 {
+  border: 1px solid #ccc;
+}
+
+#sidebar.aside #categories-3 h3, #sidebar.aside #archives-3 h3 {
+  font-size: 1.4rem;
+}
+
+#sidebar.aside #categories-3 {
+    flex-flow: column;
+    //width: 25%;
+    width: 100%;
+}
+    .screen-reader-text {
+        border: 0;
+      clip: rect(1px, 1px, 1px, 1px);
+      clip-path: inset(50%);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      word-wrap: normal !important;
+    }
+    
+#sidebar.aside #archives-3 {
+    font-size: 1.4rem;
+    //width: 25%;
+    width: 100%;
+
+}
+
+    #archives-dropdown-3, #sidebar.aside #categories-3 #cat {
+        background-color: #fff;
+        border: 2px solid #cdcdcd;
+        border-radius: 0;
+        border-style: 1px solid #ccc;
+        margin-top: 6px;
+        padding: 5px 3px;
+        width: 85%;
+    }
+
+
+
+@media (min-width: 0) and (max-width: 768px) {
+  #sidebar.aside {
+      //padding: 10px 5px;
+      flex-flow: column;
+  }
+}
+
+@media (min-width: 500px) {
+  #sidebar.aside {
+      flex-flow: row;
+      flex-wrap: wrap;
+  }
+  #sidebar.aside #text-5 {
+    width: 100%;
+  }
+  #sidebar.aside #categories-3, #sidebar.aside #archives-3  {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  #sidebar.aside {
+    padding-bottom: 1rem;
+  }
+  #sidebar.aside #text-5 {
+    width: 50%;
+  }
+  #sidebar.aside #text-5 /*h3*/.widget-title {
+    //border: 1px solid gray;
+    padding-bottom: 0;
+    font-size: 2.2rem;
+    margin-bottom: 1px;
+  }
+  #sidebar.aside #text-5 .textwidget {
+    font-size: 12px;
+    width: 85%;
+  }
+  #sidebar.aside #categories-3, #sidebar.aside #archives-3  {
+    width: 25%;
+  }
+  #sidebar.aside #categories-3 .widget-title, #sidebar.aside #archives-3 .widget-title {
+    font-size: 1.4rem;
+    padding-top: 8px;
+    padding-bottom: 0;
+    margin-bottom: 1px;
+  }
+}

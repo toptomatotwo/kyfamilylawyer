@@ -1,0 +1,90 @@
+/* Slider Stylings --------------------------------------*/
+
+.slider {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.slider a {
+    border-bottom: none;
+    color: #ffd62c;
+    margin: 0;
+}
+
+.slider a:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.slider .slide a:hover { background: none; }
+
+.slider .slides_prev,
+.slider .slides_next {
+    background: #222 url(images/icons.png) -26px -45px no-repeat;
+    border-bottom: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    text-indent: -999em;
+    position: absolute;
+    bottom: 14px;
+    height: 23px;
+    width: 23px;
+    z-index: 10;
+}
+
+.slider .slides_prev {
+    background-position: -67px -45px;
+    right: 38px;
+}
+
+.slider .slides_prev:hover {
+    background-color: #ffd62c;
+    background-position: -86px -45px;
+}
+
+.slider .slides_next { right: 10px; }
+
+.slider .slides_next:hover {
+    background-color: #ffd62c;
+    background-position: -46px -45px;
+}
+
+.slider .pagination {
+    position: absolute;
+    bottom: 1px;
+    right: 72px;
+    z-index: 10;
+}
+
+.slider .pagination li {
+    float: left;
+    margin-right: 5px;
+}
+
+.slider .pagination a {
+    background: transparent url(images/icons.png) -13px -45px no-repeat;
+    border-bottom: none;
+    display: block;
+    height: 11px;
+    width: 11px;
+    text-indent: -999em;
+}
+
+.slider .pagination a:hover,
+.slider .pagination .current a { background-position: 0 -45px; }
+
+.slider-desc {
+    background: #222;
+    color: #fff;
+    font-style: italic;
+    padding: 5px 15px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.slider-desc span,
+.slider-desc em { color: #ffd62c; }

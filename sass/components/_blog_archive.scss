@@ -1,0 +1,188 @@
+body.blog .content.wrapper, body.archive .content.wrapper {
+        display: grid;
+        grid-template-areas: "one"
+                            "two"
+                            "three"
+                            "four"
+                            "five"
+                            "six";
+    }
+
+body.blog .page-header, body.archive .page-header {
+        grid-row-start:    one;
+        grid-row-end:      one;
+        grid-column-start: one;
+        grid-column-end:   one;
+    }    
+
+body.blog .page-header, body.archive .page-header {
+    padding-left: $blogLRpadding;
+    padding-right: $blogLRpadding;
+}
+
+body.blog .page-title, body.archive .page-title {
+    //margin-bottom: 2rem;
+    line-height: 1.4;
+    font-size: 2.85rem;
+}
+
+
+body.blog #primary, body.archive #primary {
+    padding-left: $blogLRpadding;
+    padding-right: $blogLRpadding;
+}
+
+body.blog .hfeed, body.archive .hfeed, {
+        grid-row-start:    three;
+        grid-row-end:      three;
+        grid-column-start: three;
+        grid-column-end:   three;
+    }
+
+body.blog .hentry, body.archive .hentry {
+    border-bottom: 2px solid #e6e6e6;
+    padding: 2rem 0;
+    position: relative;
+} 
+
+body.blog h2, body.archive h2 {
+    font-family: 'Oswald';
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+body.blog h2 /*a*/.post-format, body.archive h2 /*a*/.post-format{
+    color: lighten($baseBlue, 10);
+    line-height: 1.4;
+    font-size: 2rem;
+}
+
+body.blog h2 /*a*/.post-format:hover, body.archive h2 /*a*/.post-format:hover {
+    letter-spacing: 1px;
+}
+
+body.blog .featured-image, body.archive .featured-image {
+    float: right;
+    margin-left: 12px;
+}
+
+body.blog .featured-image img, body.archive .featured-image img {
+    border: 1px solid gray;
+    height: auto;
+    max-width: 220px;
+    }
+
+body.blog .entry-meta, body.archive .entry-meta {
+    margin-top: calc(1.5rem + 12px);
+}
+
+body.blog .entry-meta .post-format, body.archive .entry-meta .post-format {
+    display: none; /* this EL is empty */
+}
+
+body.blog .entry-content p, body.archive .entry-content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+body.blog /*a*/.post-format {
+    /* this element is empty! */
+    //display: none;
+}
+
+body.blog .entry-meta .h5, body.blog .entry-meta .published {
+//    font-family: 'Cabin', sans-serif;
+}
+
+body.blog .front-page__blade--affiliates, body.blog .front-page__blade--from-blog, body.archive .front-page__blade--affiliates, body.archive .front-page__blade--from-blog,   { display: none }
+
+body.blog strong, body.archive strong,  {
+    grid-row-start:    four;
+    grid-row-end:      four;
+    grid-column-start: four;
+    grid-column-end:   four;
+}
+body.blog .front-page__blade--from-blog, body.archive .front-page__blade--from-blog {
+    grid-row-start:    five;
+    grid-row-end:      five;
+    grid-column-start: five;
+    grid-column-end:   five;
+}
+body.blog .front-page__affiliates, body.archive .front-page__affiliates {
+    grid-row-start:    six;
+    grid-row-end:      six;
+    grid-column-start: six;
+    grid-column-end:   six;
+}
+
+@media (min-width:0) and (max-width: 767px) {
+    body.blog .hentry, body.archive .hentry {
+        display: grid;
+        grid-template-areas: "title"
+                        "img"
+                        "content"
+                        "meta";
+        margin-left: 0;                 
+    }
+    body.blog h2, body.archive h2 {
+        grid-row-start:    title;
+        grid-row-end:      title;
+        grid-column-start: title;
+        grid-column-end:   title;
+        text-align: center;
+    }
+    body.blog .featured-image, body.archive .featured-image {
+        grid-row-start:    img;
+        grid-row-end:      img;
+        grid-column-start: img;
+        grid-column-end:   img;   
+        margin: 0 auto;
+    }
+    body.blog .hentry .entry-meta, body.archive .hentry .entry-meta,  {
+        grid-row-start:    meta;
+        grid-row-end:      meta;
+        grid-column-start: meta;
+        grid-column-end:   meta;
+        position: relative;
+        left: 0;
+        margin: 12px 0 0 0;
+    }
+    body.blog .entry-content, body.archive .entry-content {
+        grid-row-start:    content;
+        grid-row-end:      content;
+        grid-column-start: content;
+        grid-column-end:   content;
+        padding-bottom: 5px;
+    }
+}
+
+@media (min-width: 520px) {
+    body.blog .page-title, body.blog .page-title {
+        font-size: 2.75rem;
+    }
+}
+
+@media (min-width: 768px) {
+    body.blog .page-title, body.archive .page-title {
+        font-size: 3rem;
+    }
+    body.blog .hentry, body.archive .hentry {
+        margin-left: 120px;
+    }
+}
+
+@media (min-width: 900px) {
+    body.blog .page-title, body.archive .page-title {
+        font-size: 3.4rem;
+    }
+}
+
+
+
+
+
+
+
+
+

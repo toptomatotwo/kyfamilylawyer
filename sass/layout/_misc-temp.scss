@@ -1,0 +1,29 @@
+/*-----------------------------------------------------------------------------------*/
+/*  from Orig SS
+/*-----------------------------------------------------------------------------------*/
+
+.bgwidth { width: 100%; }
+
+.bgheight { height: 100%; }
+
+/*
+#primary {
+    float: left;
+    width: 680px;
+}*/
+
+.layout-2cl #primary { float: right; }
+
+
+
+.page-template-template-home-php #content { padding-top: 25px; }
+
+.page-template-template-portfolio-php #content,
+.tax-portfolio-type #content {
+    padding-bottom: 0;
+    padding-right: 0;
+}
+
+.layout-2cl #sidebar { float: left; }
+
+#footer { clear: both; }

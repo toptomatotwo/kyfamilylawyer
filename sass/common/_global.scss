@@ -1,0 +1,87 @@
+html {
+  
+}
+
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 100%;
+}
+
+div { box-sizing: border-box; }
+
+::before, ::after {
+    -webkit-box-sizing: border-box;
+}
+
+/* TEMP */
+body.blog .content {
+  //display: none;
+}
+
+body {
+  background-image: url('https://hh.lexwebdev.com/wp-content/themes/kyfamilylawyer/images/bg_paperwork_bw.jpg') !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+}
+
+a {
+    color: $accent;
+    padding: 0 1px;
+    margin: 0 -1px;
+    text-decoration: none;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    -ms-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+
+a:hover {
+  color: $hover;
+}
+
+a img {
+    border: none;
+    vertical-align: bottom;
+} 
+
+p:empty {
+  display: none;
+}
+
+strong { font-weight: bold; }
+
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ol, ul {
+  padding-left: 5rem;
+  margin: 2rem 0;
+}
+
+
+
+
+
+blockquote {
+  padding: 0 2rem;
+  quotes: none;
+  font-weight: normal;
+  font-variant: ita
+}
+
+/*
+blockquote {
+    background: transparent url(images/quote.png) 0 4px no-repeat;
+    color: #222;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 50px;
+    padding-left: 30px;
+} */

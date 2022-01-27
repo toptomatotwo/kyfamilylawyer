@@ -1,0 +1,47 @@
+@import "sass/common/buttons";
+@import "sass/common/color_palette";
+@import "sass/common/fonts";
+@import "sass/common/forms";
+@import "sass/common/global";
+@import "sass/common/main_content";
+@import "sass/common/mixins";
+@import "sass/common/reset";
+@import "sass/common/typography";
+@import "sass/common/variables";
+
+@import "sass/common/alerts_tabs_toggle";
+@import "sass/common/common_media";
+@import "sass/common/pagination";
+@import "sass/common/shortcodes";
+
+@import "sass/components/blog";
+@import "sass/components/blog_archive";
+@import "sass/components/_blog-cat-date-aside";
+@import "sass/components/slider";
+@import "sass/components/widgets";
+
+@import "sass/components/blog_comments";
+@import "sass/components/isotope";
+@import "sass/components/jplayer";
+@import "sass/components/portfolio";
+
+
+@import "sass/layout/footer";
+@import "sass/layout/header";
+@import "sass/layout/hero";
+@import "sass/layout/misc-temp";
+@import "sass/layout/search";
+
+@import "sass/pages/about";
+@import "sass/pages/archive";
+@import "sass/pages/contact";
+@import "sass/pages/front-page";
+@import "sass/pages/pages";
+@import "sass/pages/prepare-your-case";
+@import "sass/pages/press";
+
+@import "sass/common/hide-stuff";
+
+.footer, .sub-footer, .footer-affiliations {
+	//display: none;
+}

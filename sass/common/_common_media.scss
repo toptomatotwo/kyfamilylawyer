@@ -1,0 +1,107 @@
+/* Common Media Stylings --------------------------*/
+
+.entry-content img { max-width: 100%; }
+
+img.alignleft {
+    float: left;
+    margin: 10px 25px 20px 0;
+}
+
+img.alignright {
+    display: block;
+    margin: 10px 0 25px 20px;
+}
+
+img.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+    margin-top: 5px;
+}
+
+img.alignnone {
+    display: block;
+    margin: 20px 0 20px;
+}
+
+.wp-caption {
+    text-align: center;
+    margin: 10px 20px 20px 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+.wp-caption.aligncenter { margin: 20px auto; }
+
+.wp-caption.alignleft { margin-left: 0; }
+
+.wp-caption.alignright { margin-right: 0; }
+
+.wp-caption.alignnone { margin-left: 0; }
+
+.wp-caption img,
+.wp-caption img a {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+.wp-caption
+.wp-caption-text {
+    margin: 0;
+    padding: 5px;
+}
+
+.wp-smiley {
+    max-height: 13px;
+    margin: 0 !important;
+}
+
+.gallery { margin: auto; }
+
+.gallery-image {
+    border: 2px solid #efefef;
+    margin-left: 0;
+}
+
+.gallery-caption {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    margin-left: 0;
+}
+
+.gallery-item {
+    float: left;
+    text-align: center;
+    margin-left: 0;
+}
+
+.gallery {
+    float: left;
+    width: 100%;
+}
+
+.gallery-item { float: left; }
+
+.gallery-item .gallery-caption {
+    margin-bottom: 0 !important;
+    padding-right: 12%;
+}
+
+.gallery-item img {
+    margin: 0 !important;
+    padding:  0 !important;
+}
+
+.gallery-item a {
+    float: left;
+    border: none !important;
+    margin:  0 !important;
+    padding: 0 !important;
+}
+
+iframe {
+    max-width: 100%;
+    margin-bottom: 20px;
+}

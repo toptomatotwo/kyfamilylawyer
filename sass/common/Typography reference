@@ -1,0 +1,35 @@
+Logo header top is:
+	proxima_novaregular;
+
+Header Right, call to action is:
+	proxima_novaregular;
+
+Menu is:
+	Lato", sans-serif;	
+
+Front page <p> text is:
+	"Open Sans", sans-serif;
+
+h2 (Practice Areas)	is:
+	"Oswald", sans-serif;
+
+Practice Areas list is:
+	proxima_novaregular;
+
+From the Blog Sub header <h5> is:
+	"minion-pro", Georgia, "Times New Roman", Times, serif	..wtf???
+
+Affiliates list is:
+	"Roboto", sans-serif (try Cabin?)
+
+Footer small text is
+	"Cabin", sans-serif;
+
+Page titles <h1> are
+	'minion-pro', Georgia, "Times New Roman", Times, serif;		
+
+Blog titles <h2> (blog archive page) are:
+	"proxima-nova", sans-serif
+
+Blog entry content <p> are
+	"Open Sans", sans-serif;

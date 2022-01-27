@@ -1,0 +1,29 @@
+/*-----------------------------------------------------------------------------------*/
+/*  4.  Main Content Styles
+/*-----------------------------------------------------------------------------------*/
+
+
+
+.entry-title,
+.entry-title a {
+    border-bottom: none;
+    color: #222;
+    font-size: 24px;
+    line-height: 28px;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    -ms-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+.entry-title a:hover {
+    background-color: transparent;
+    color: #b2b2b6;
+    text-decoration: none;
+}
+
+.page-header {
+    padding-bottom: 22px;
+    position: relative;
+}

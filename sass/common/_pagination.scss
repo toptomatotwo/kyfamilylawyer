@@ -1,0 +1,63 @@
+/*-----------------------------------------------------------------------------------*/
+/*  8.  Pagination
+/*-----------------------------------------------------------------------------------*/
+
+.page-navigation,
+.single-page-navigation {
+    display: flex;
+    flex-flow: row;
+    padding: 2rem 12px;
+    justify-content: space-between;
+}
+
+.page-navigation a,
+.single-page-navigation a {
+    color: $black;
+    border-bottom: none;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    padding: 1px 4px 0;
+}
+
+.page-navigation a:hover,
+.single-page-navigation a:hover { color: $accent; letter-spacing: 1px;}
+
+.page-navigation .nav-next { float: left; }
+
+.page-navigation .nav-previous { float: right; }
+
+.single-page-navigation .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+
+.single-page-navigation .nav-previous {
+    float: left;
+    width: 50%;
+}
+
+.single-portfolio .single-page-navigation {
+    background: none;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+
+.single-portfolio .single-page-navigation .nav-previous {
+    display: inline;
+    float: none;
+}
+
+.single-portfolio .single-page-navigation .nav-next {
+    display: inline;
+    float: none;
+    margin-left: 5px;
+    padding-left: 15px;
+}
+
+.single-portfolio .single-page-navigation .nav-previous + .nav-next { background: transparent url(images/bg-widget-title.gif) 0 3px no-repeat; }
+
+.ie7.single-portfolio .single-page-navigation .nav-previous + .nav-next { background-position: 0 8px; }

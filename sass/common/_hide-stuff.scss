@@ -1,0 +1,14 @@
+/*body*/.page-template-default, body.page-template-template-contact, body.error404  {
+	#sidebar {
+		display: none;
+	}
+	.front-page__blade--from-blog {
+		display: none;
+	}
+	.front-page__blade--affiliates {
+		display: none;
+	}
+	.aside {
+		display: none;
+	}
+}

@@ -1,0 +1,20 @@
+/* Archive Template --------------------------------------*/
+
+.search_posts { margin-bottom: 30px; }
+
+.archive-lists h4 { margin-bottom: 10px; }
+
+.archive-lists li {
+    line-height: 24px;
+    list-style-type: circle;
+}
+
+.archive-lists li a {
+    border-bottom: none;
+    padding: 2px 3px;
+    margin: -2px -3px;
+}
+
+.archive-lists .children { margin-bottom: 0; }
+
+.full-width { width: 940px !important; }

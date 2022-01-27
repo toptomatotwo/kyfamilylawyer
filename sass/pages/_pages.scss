@@ -1,0 +1,97 @@
+.wrapper {
+    background: url(images/bg_header_wide.png) repeat-y 0;
+    //background-color: $liteGrayGreen;
+    //display: grid;
+    margin: 0 auto;
+    padding: 25px 0 0 0;
+    max-width: $maxWidth;
+    width: 100%;
+    min-height: 500px;
+}
+
+.hero__wrapper, .home-callout {
+    
+}
+
+body.page-template-default #primary, body.page-template-template-contact #primary, body.error404 #primary {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.home-callout {
+    overflow: hidden;
+}
+
+/*
+.home-callout p.widget_simpleimage img {
+    height: auto;
+    width: 100%;
+} */
+
+
+.home-callout .simpleimage img, .home-callout /*p*/.widget_simpleimage img, .home-callout /*p*/.widget_media_image img {
+    height: auto;
+    max-width:456px;
+    vertical-align:baseline;
+    width: 100%;
+}
+
+.home-callout .widget a {
+    padding:0;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  10. Page Templates
+/*-----------------------------------------------------------------------------------*/
+
+.page .page-header .edit-post {
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+
+.page-template-template-home-php #primary,
+.page-template-template-full-width-php #primary {
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+}
+
+.page-template-template-home-php .slider {
+    margin-bottom: 0;
+    //float: left;
+    height: 350px;
+    width: 700px;
+}
+
+.page-template-template-home-php .slider img { height: 350px; }
+
+.page-template-template-home-php .slider + .entry-content {
+    width: 220px;
+    //float: right;
+}
+
+@media (min-width: 768px) {
+    body.page-template-default #primary, body.page-template-template-contact #primary, body.error404 #primary {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        min-height: 672px;
+    }
+}
+
+/*
+.page-template-default #content,
+.page-template-template-archives-php #content,
+.page-template-template-contact-php #content { }
+
+.page-template-default .hentry,
+.page-template-template-home-php .hentry,
+.page-template-template-full-width-php .hentry,
+.page-template-template-archives-php .hentry,
+.page-template-template-contact-php .hentry {
+    border-bottom: none;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+*/

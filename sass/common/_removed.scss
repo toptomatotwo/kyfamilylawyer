@@ -1,0 +1,96 @@
+address { font-style: italic; }
+
+abbr[title],
+acronym[title],
+dfn[title] {
+    cursor: help;
+    border-bottom: 1px dotted #666;
+}
+
+blockquote {
+    background: transparent url(images/quote.png) 0 4px no-repeat;
+    color: #222;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 50px;
+    padding-left: 30px;
+}
+
+
+
+em,
+dfn,
+cite { font-style: italic; }
+
+dfn { font-weight: bold; }
+
+sup {
+    font-size: 11px;
+    vertical-align: top;
+}
+
+sub {
+    font-size: 11px;
+    vertical-align: bottom;
+}
+
+small { font-size: 11px; }
+
+del { text-decoration: line-through; }
+
+ins { text-decoration: underline; }
+
+code,
+pre { line-height: 18px; }
+
+var,
+kbd,
+samp,
+code,
+pre {
+    font: 12px/18px Consolas, "Andale Mono", Courier, "Courier New", monospace;
+    background: #f7f7f8;
+}
+
+kbd { font-weight: bold; }
+
+samp,
+var { font-style: italic; }
+
+pre {
+    white-space: pre;
+    overflow: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    clear: both;
+}
+
+code { padding: 3px; }
+
+ul,
+ol,
+dl { margin-left: 30px; }
+
+table {
+    border: 1px solid #ccc;
+    border-width: 1px;
+    line-height: 18px;
+    margin: 0 0 22px 0;
+    text-align: left;
+    padding: 0 5px;
+}
+
+table .even { background: #ddd; }
+
+caption { text-align: left; }
+
+tr { border-bottom: 1px solid #ccc; }
+
+th,
+td {
+    padding: 5px;
+    vertical-align: middle;
+    text-align: center;
+}

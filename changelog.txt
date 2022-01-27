@@ -1,0 +1,50 @@
+*** Scope Changelog ***
+
+June 18 2012 - Version 1.1
+
+	* style.css
+		- updated version number
+		- FF portfolio meta fix
+	* admin-interface.php - moved to wp_get_theme()
+	* theme-options.php - moved to wp_get_theme()
+	* upload-button.js - fixed Cheatin Eh? bug
+	* jquery.custom.js - fixed $ bug
+	* functions.php
+		- fixed squished login logo
+		- fixed url and theme name echo on login
+		- 
+
+Jan 23 2012 - Version 1.0.2
+
+	* template-portfolio.php - use urldecode() for foreign language chars in filter
+	* theme-functions.php - use urldecode() for foreign language chars in filter
+	* header.php - prevent code output if no default fullscreen image is provided
+	* jquery.custom.js - replaced $ in favor of jQuery
+	* link.php - singular page now links to resource link
+	* home-recent-work.php - fixed output order
+	* widget-recentportfolios.php - fixed output order
+	* style.css 
+		- updated version number
+		- fixed Firefox flicker on portfolio pages associated with links
+
+Dec 13 2011 - Version 1.0.1
+
+	* theme-functions.php 
+		- updated custom background function
+		- added captions into individual post and portfolio sliders
+	* functions.php 
+		- fixed wp_enqueue_scripts call
+		- updated validation code to latest release
+	* jquery.custom.admin.js - added hide/show feature to audio, video, image metaboxes
+	* upload-button.js - updated grab proper URL in WP 3.2 and WP 3.3
+	* style.css 
+		- updated version number
+		- fixed hover states on media player
+
+	ADDED:
+	* changelog.txt
+
+
+Dec 5 2011 - Version 1.0
+	
+	* First Release

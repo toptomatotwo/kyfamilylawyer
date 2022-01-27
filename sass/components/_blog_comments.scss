@@ -1,0 +1,122 @@
+/*-----------------------------------------------------------------------------------*/
+/*  7.  Comments
+/*-----------------------------------------------------------------------------------*/
+
+#comments {
+    background: #ffd62c url(images/icons.png) -360px 1px no-repeat;
+    float: left;
+    margin-top: 62px;
+    height: 45px;
+    width: 45px;
+}
+
+.commentlist {
+    background: transparent url(images/bg-comments-dots.gif) 0 0 no-repeat;
+    margin: 20px 0 40px 0;
+    list-style-type: none;
+    padding-left: 120px;
+    padding-top: 20px;
+}
+
+.page-template-template-full-width-php .commentlist { width: 560px; }
+
+.commentlist li.comment > div {
+    border-top: 2px solid #f7f7f8;
+    padding-top: 20px;
+}
+
+.commentlist li.comment:first-child > div { border-top: none; }
+
+.commentlist .children li.comment:first-child > div { border-top: 2px solid #f7f7f8; }
+
+.pinglist {
+    margin: 20px 0 40px 30px;
+    list-style-type: decimal;
+}
+
+.comment {
+    margin-top: 20px;
+    background: #fff;
+}
+
+#commentform input { margin-right: 10px; }
+
+#commentform label small { font-size: 13px; }
+
+#commentform label small span { color: #b2b2b6; }
+
+#commentform textarea { width: 96%; }
+
+.children { list-style-type: none; }
+
+.avatar {
+    background: #fff;
+    border: 2px solid #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.comment .avatar {
+    float: right;
+    margin: 0 0 0 10px;
+}
+
+.bypostauthor .avatar { border-color: #ffd62c; }
+
+.comment-meta,
+.comment-meta a {
+    border-bottom: none;
+    color: #555;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+
+.comment-author-admin {}
+
+.comment-author {
+    color: #333;
+    font: bold 13px/15px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+
+.comment-author cite { font-style: normal; }
+
+.comment-author a { border-bottom: 1px dotted #333; }
+
+.comment-author a:hover { border-bottom: none; }
+
+.nocomments {
+    text-align: center;
+    margin-left: 120px;
+    padding: 0 20px 20px;
+}
+
+.comment-body ul { list-style-type: disc; }
+
+.comment-body ol { list-style-type: decimal; }
+
+#respond {
+    background: transparent url(images/dots.gif) 0 0 repeat-x;
+    width: 560px;
+    padding-top: 40px;
+    margin-left: 120px;
+    position: relative;
+}
+
+#respond h3 {
+    background: #ffd62c url(images/icons.png) -405px 1px no-repeat;
+    text-indent: -999em;
+    position: absolute;
+    top: 40px;
+    left: -120px;
+    height: 45px;
+    width: 45px;
+}
+
+.commentlist #respond {
+    background-image: none;
+    margin-left: 0;
+}

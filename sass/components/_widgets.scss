@@ -1,0 +1,181 @@
+/*-----------------------------------------------------------------------------------*/
+/*  11. Widgets
+/*-----------------------------------------------------------------------------------*/
+
+.widget {
+    margin-bottom: 5px;
+ }
+
+.widget-title {
+    //color: #A63838;
+    color: $blueHeader;
+    //font-size: 2.4rem;
+    font-variant: small-caps;
+    padding-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+.widget-title span {
+
+}
+
+.widget a {
+    border-bottom: none;
+    color: #555;
+    padding: 0 2px;
+    margin: 0 -2px;
+}
+
+.widget ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.widget ol {
+    list-style-type: decimal;
+    margin-bottom: 0;
+}
+
+#sidebar .widget {
+    //padding: 15px;
+    padding-left: $blogLRpadding;
+}
+
+/* Search Widget ------------------------------------*/
+
+.widget_search #s { width: 200px; }
+
+.widget_search form,
+.widget_search fieldset { margin: 0; }
+
+/* Calander Widget ----------------------------------*/
+
+.widget_calendar caption { margin-bottom: 5px; }
+
+.widget_calendar table { width: 100% }
+
+/* Twitter Widget -----------------------------------*/
+
+#twitter-holder {
+    background: url(images/ajax-loader.gif) no-repeat center;
+    min-height: 20px;
+}
+
+.tz_tweet_widget ul {
+    margin: 0 0 10px 0;
+    list-style-type: none;
+}
+
+.tz_tweet_widget ul li { padding: 8px 0; }
+
+.tz_tweet_widget ul li > a {
+    color: #b2b2b6;
+    display: block;
+}
+
+#footer .tz_tweet_widget ul li > a { color: #AAAAAA; }
+
+.tz_tweet_widget ul li > a:hover {
+    background-color: transparent;
+    color: #222;
+}
+
+.tz_tweet_widget ul li span a {
+    color: #222;
+}
+
+#footer .tz_tweet_widget ul li span a {
+    border-color: #fff;
+    color: #fff;
+}
+
+.tz_tweet_widget ul li span a:hover { border-bottom: none; }
+
+#footer .tz_tweet_widget ul li span a:hover { color: #aaa; }
+
+a.twitter-link {
+    padding: 2px 4px;
+    margin: -2px -4px;
+}
+
+#footer .twitter-link {
+    background: url(images/icon_twitter.png) no-repeat 0 0px;
+    padding-left: 25px;
+    color: #fff;
+ }
+
+#footer .twitter-link:hover { color: #aaa; }
+
+/* Flickr Widget ------------------------------------------*/
+
+.tz_flickr_widget { padding-right: 0; }
+
+.tz_flickr_widget .widget-title { margin-bottom: 10px; }
+
+.tz_flickr_widget > div {
+    padding-right: 10px;
+    margin-right: -20px;
+}
+
+.flickr_badge_image {
+    float: left;
+    margin: 0 17px 17px 0;
+    height: 40px;
+    width: 40px;
+}
+
+.flickr_badge_image a:hover { background-color: transparent; }
+
+.flickr_badge_image img {
+    background: #fff;
+    border: 3px solid #ffd62c;
+    height: 40px;
+    width: 40px;
+}
+
+.flickr_badge_image img:hover { border-color: #222; }
+
+#footer .flickr_badge_image img:hover { border-color: #fff; }
+
+/* Video Widget ------------------------------------------*/
+
+.tz_video { margin-bottom: 20px; }
+
+/* Custom Recent Portfolio/Work Widget -------------------*/
+/* see Portfolio Content styles for rules */
+
+.tz-recent-portfolios-widget li { margin: 0 0 20px 0; }
+
+.tz_recent_portfolios_widget { margin-bottom: 10px!important; }
+
+/* Custom Blog Widget ------------------------------------*/
+
+.tz-blog-widget li {
+    margin-bottom: 1.6rem;
+    position: relative;
+}
+
+.tz-blog-widget .entry-title { line-height: 21px; }
+
+.tz-blog-widget .entry-title a {
+      line-height:22px;
+    font-size: 18px;
+}
+
+/*
+.tz-blog-widget .entry-title a:hover {
+    border-bottom: none;
+    color: #222;
+}
+
+.tz-blog-widget .entry-meta {
+    left: 0;
+    top: 11px;
+}
+*/
+
+#footer .tz-blog-widget .entry-meta a:hover span.post-format {
+    background-color: #fff;
+    background-position: 0 -68px;
+}
