@@ -24,8 +24,100 @@
     <!-- <script src="https://use.typekit.com/gju8fgs.js"></script> -->
     <!-- <script>try{Typekit.load();}catch(e){}</script> -->
     <!-- <script src="https://kylawyer.test/wp/wp-content/themes/kyfamilylawyer/js/kfl.js"></script> -->
-    <script src="https://hollyh8.sg-host.com/wp-content/themes/kyfamilylawyer/kyfamilylawyer/js/kfl.js"></script>
+    <style type="text/css">
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Work+Sans:wght@600&display=swap');
+/**
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+*/
+
+.page-id-713 .content.wrapper {
+    position: relative;
+}
+
+.page-id-713 .page-header {
+    display: none !important;
+}
+
+/*body*/.page-id-713 .post-713::before {
+    content:"TEST";
+    position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('http://hollyh8.sg-host.com/wp-content/uploads/2022/01/pexels-photo-1738626.jpeg');
+  filter: grayscale(100%) brightness(25%);
+}
+
+.post-713 .entry-content {
+    padding-top: 2.5rem;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.top-ten__hdr, .top-ten__list-item {
+    color: #fff
+}
+
+.top-ten__hdr, .top-ten__h2, .top-ten__h3 {
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.top-ten__hdr {
+    font-size: 2.5rem;
+}
+
+.top-ten__list {
+    padding: 0 7.5rem;
+}
+
+.top-ten__list-item {
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size:1.25rem;
+    margin-bottom: .75rem;
+}
+
+.top-ten__footer {
+    background-color: #c00;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    min-height: 120px;
+    padding-top: 1.25rem;
+    text-align: center;
+    width: 100%;
+}
+
+.top-ten__h2, .top-ten__h3 {
+    color: #fff;
+}
+
+.top-ten__h2 {
+    font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.top-ten__h3 {
+    font-size: 1.5rem;
+}
+
+
+/* PUT THESE IN RESPECT FILES*/
+
+
+footer {
+    position: relative;
+}
+
+.full-width {
+    width: 1000px !important;
+}
+    </style>
 	<?php wp_head(); ?>
 <!-- END head -->
 </head>
@@ -95,18 +187,8 @@
 			<?php include('inc/kfl-nav.php'); ?>
 
 			<!-- BEGIN #primary-nav -->
-    		<nav id="primary-nav" class="primary-nav nav" style="display:none">
-                
-                <label for="open" class="mobile-nav-label">
-                    <span class="hidden-desktop mobile-nav-span"></span>
-                </label>
-                <input type="checkbox" name="checkbox-open" id="open">
-                
-    			<?php if ( has_nav_menu( 'primary-menu' ) ) { /* if menu location 'primary-menu' exists then use custom menu */ ?>
-    			<?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
-    			<?php } ?>
-    		<!-- END #primary-nav -->
-    		</nav>
+            
+    		
         <!--END #header-->
 		</div>
 

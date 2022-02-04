@@ -27,7 +27,10 @@
 
 
 @import "sass/layout/footer";
-@import "sass/layout/header";
+@import "sass/layout/new-header";
+/* @import "sass/layout/nav"; */
+@import "sass/layout/new-nav";
+
 @import "sass/layout/hero";
 @import "sass/layout/misc-temp";
 @import "sass/layout/search";
@@ -39,6 +42,7 @@
 @import "sass/pages/pages";
 @import "sass/pages/prepare-your-case";
 @import "sass/pages/press";
+@import "sass/pages/mediation";
 
 @import "sass/common/hide-stuff";
 

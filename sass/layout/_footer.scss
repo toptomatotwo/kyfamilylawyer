@@ -120,53 +120,61 @@ footer {
     justify-content: center;
 }
 
-/*ul*/.footer-menu {
+/*ul*/
+.footer-menu {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    font-family: 'Cabin', sans-serif;
-    font-size: .85rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 0.85rem;
     list-style-type: none;
     margin-bottom: 0;
+    padding-left: 0;
     text-align: center;
     width: 85%;
-}
-
-/*ul*/.footer-menu li {
+  }
+  
+  /*ul*/
+  .footer-menu li {
     margin-bottom: 12px;
-}
-
-/*ul*/.footer-menu li, /*ul*/.footer-menu li a {
-    color: $white;
-} 
-
-.footer__link:hover {
-    color: $hover;
-}
-
-@media screen and (min-width: 768px) {
-    /*ul*/.footer-menu {
-        font-size: .7rem;
-        flex-flow: row;
-        padding: 0 1rem;
-        width: 100%;
+  }
+  
+  /*ul*/
+  .footer-menu li, .footer-menu li a {
+    color: #fff;
+  }
+  
+  .footer__link:hover {
+    color: #f3b215;
+  }
+  
+  @media screen and (min-width: 768px) {
+    /*ul*/
+    .footer-menu {
+      font-size: 0.7rem;
+      flex-flow: row;
+      padding: 0 1rem;
+      width: 100%;
     }
-    /*ul*/.footer-menu li {
-        margin-bottom: 0;
+  
+    /*ul*/
+    .footer-menu li {
+      margin-bottom: 0;
     }
+  
     .footer-left {
-        width: 100%;
+      width: 100%;
     }
-}
-
-@media screen and (min-width: 850px) {
-       /*ul*/.footer-menu {
-        font-size: .85rem;
-       }
-}
-
-@media screen and (min-width: 1000px) {
-    /*ul*/.footer-menu {
-        width: 90%;
+  }
+  @media screen and (min-width: 850px) {
+    /*ul*/
+    .footer-menu {
+      font-size: 0.85rem;
     }
-}
+  }
+  @media screen and (min-width: 1000px) {
+    /*ul*/
+    .footer-menu {
+      width: 90%;
+    }
+  }

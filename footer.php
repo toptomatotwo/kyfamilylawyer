@@ -20,12 +20,43 @@
 	<!-- Theme Hook -->
 	<?php wp_footer(); ?>
 <script>
-    
-    $(document).ready(function(){
-      $('#menu-item-598').removeClass('current-menu-item');
-      $('#menu-item-598').removeClass('current_page_item');
-    });
-    
+
+function openMobileNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+/*    
+$(document).ready(function(){
+  $('#menu-item-598').removeClass('current-menu-item');
+  $('#menu-item-598').removeClass('current_page_item');
+});
+*/
+/*
+function subNavOpen() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+function subNavOpenii() {
+  document.getElementById("myDropdownii").classList.toggle("show");
+}
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+*/
+  
 </script>
 <!--END body-->
 </body>

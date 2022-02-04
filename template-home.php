@@ -13,7 +13,7 @@
                         if( $tz_slider == 'true' ) { /*get_template_part('includes/home-imageslider');*/ }
 
                     ?>
-                        <img src="/wp-content/uploads/2020/01/slide_holly.jpg" class="hero__main-img">
+                        <img src="http://hollyh8.sg-host.com/wp-content/uploads/2020/01/slide_holly.jpg" class="hero__main-img">
             		<!--BEGIN .entry-content -->
             		<div class="entry-content hello hero__sidebar">
             			<?php the_content(); ?>
