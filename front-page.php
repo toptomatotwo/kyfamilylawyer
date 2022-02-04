@@ -1,18 +1,15 @@
 <?php get_header(); ?>
-            <!--BEGIN #primary .hfeed iamhere-->
-            <div id="primary" class="hfeed ">
+
+            <!--BEGIN #primary .hfeed-->
+            <div id="primary" class="hfeed test-template-fffront">
                   
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
             	<!--BEGIN .hentry-->
             	<div <?php post_class('hero__wrapper') ?> id="post-<?php the_ID(); ?>">
 
-                    <?php
-                        $tz_slider = get_option('tz_image_slider');
-                        if( $tz_slider == 'true' ) { /*get_template_part('includes/home-imageslider');*/ }
-
-                    ?>
-                        <img src="/wp-content/uploads/2020/01/slide_holly.jpg" class="hero__main-img">
+                    
+                        <img src="http://hollyh8.sg-host.com/wp-content/uploads/2020/01/slide_holly.jpg" class="hero__main-img">
             		<!--BEGIN .entry-content -->
             		<div class="entry-content hello hero__sidebar">
             			<?php the_content(); ?>
@@ -23,9 +20,10 @@ Our family court is structured around a 1 court 1 family principal divided into 
 
             	<!--END .hentry-->
             	</div>
+</div><!-- missing closing div? -->
 
             	<?php
-                  get_sidebar('home-callout');
+                  //get_sidebar('home-callout');
             	?>
 
             	<?php endwhile; endif; ?>
@@ -36,10 +34,33 @@ Our family court is structured around a 1 court 1 family principal divided into 
                         <h2 class="practice-areas__header front-page__h2">Practice Areas</h2>
                       </div>  
                       <ul class="practice-areas__list">
-                          <li>Custody</li><li>Divorce</li><li>Domestic Violence <!--(EPO DVO IPO)--></li><li>Child Support</li>
+                          <li>Mediation</li><li>Custody</li><li>Divorce</li><li>Domestic Violence <!--(EPO DVO IPO)--></li><li>Child Support</li>
                           <li>Parenting Time</li><li>Adoption</li><li>Same Sex + Cohabition</li><li>Grandparent's Rights</li>
                       </ul>
                   </div>
-            </div><!-- end content -->
+                  <?php
+          // Grab the related posts if selected to display in theme options
+          if( 'portfolio' == get_post_type() && !is_tax('portfolio-type') && !is_search() && !is_404() ) {
 
+            $related_ports = get_option('tz_portfolio_related');
+            if( !empty($related_ports) && $related_ports != '0' ) {
+                    //get_template_part('includes/footer-related-posts');
+                }
+        }
+    ?>
+
+    
+        
+    <div class="front-page__blade front-page__blade--from-blog">
+        <!-- <div id="footer" class="clearfix footer front-page__blade front-page__blade--practice"> -->
+        <?php get_sidebar('left-footer-column'); ?>
+        <?php get_sidebar('center-footer-column'); ?>
+        <?php get_sidebar('right-footer-column'); ?>
+    
+    </div>
+        
+    <?php include('inc/memberships-affiliations.php'); ?>
+    <?php include('inc/bear-blade.php'); ?>
+            
 <?php get_footer(); ?>
+</div><!-- end content -->

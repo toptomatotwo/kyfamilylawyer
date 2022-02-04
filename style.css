@@ -3793,10 +3793,13 @@ body.page-id-105 .entry-content ul li {
 }
 
 /*body*/
-.page-template-default #sidebar, body.page-template-template-contact #sidebar, body.error404 #sidebar {
-  display: none;
+.page-template-default, body.page-template-template-contact, body.error404 {
+  /*
+  .front-page__blade--from-blog {
+  	display: none;
+  } */
 }
-.page-template-default .front-page__blade--from-blog, body.page-template-template-contact .front-page__blade--from-blog, body.error404 .front-page__blade--from-blog {
+.page-template-default #sidebar, body.page-template-template-contact #sidebar, body.error404 #sidebar {
   display: none;
 }
 .page-template-default .front-page__blade--affiliates, body.page-template-template-contact .front-page__blade--affiliates, body.error404 .front-page__blade--affiliates {
