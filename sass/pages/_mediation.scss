@@ -1,8 +1,67 @@
+body.page-id-694 .page-header {
+  padding-bottom: 0;
+  margin-bottom: 12px;
+}
+
+figure.mediation__quote {
+  display: block;
+  margin: 0 auto 2.5rem auto;
+  width: 100%;
+}
+
+.mediation__blockquote {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5rem;
+  margin: 0 0 2rem 0;
+  padding: 0;
+  text-align: center;
+}
+
+blockquote::before {
+  content: open-quote;
+  color: #ccc;
+  font-size: 5rem;
+  display: inline;
+  font-family: 'Courier', serif;
+  line-height: 1;
+}
+blockquote::after {
+  content: close-quote;
+  color: #ccc;
+  display: inline;
+  font-size: 5rem;
+  font-family: 'Courier', serif;
+  line-height: 1;
+}
+blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+
+blockquote p {
+  display: inline;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1 !important;
+}
+
+figcaption {
+  font-family: 'Times', serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  width: 90%;
+}
+
 .mediation__bear {
   border: 1px solid #ccc;
   width: 310px;
 }
 
-.mediation__bear--left { float: left;margin-right: 7px}
+.mediation__bear--left { 
+  float: left; 
+  margin-right: 7px;
+}
 
-.mediation__bear--right { float: right; margin-left: 7px}
+.mediation__bear--right { 
+  float: right; 
+  margin-left: 7px;
+}

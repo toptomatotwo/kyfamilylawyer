@@ -1,4 +1,10 @@
 
-body.page-template-default .wrapper {
-	
+.about__holly-photo {
+    border: 1px solid #ccc;
+    float: left;
+    margin: 5px 10px 5px 0;
+    width: 33%;
+    min-width: 150px;
+    max-width: 250px;
+    @include drop-shadow;
 }

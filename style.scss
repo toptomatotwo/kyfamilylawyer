@@ -14,6 +14,7 @@
 @import "sass/common/pagination";
 @import "sass/common/shortcodes";
 
+@import "sass/components/blog-front-page";
 @import "sass/components/blog";
 @import "sass/components/blog_archive";
 @import "sass/components/_blog-cat-date-aside";
@@ -38,14 +39,12 @@
 @import "sass/pages/about";
 @import "sass/pages/archive";
 @import "sass/pages/contact";
+@import "sass/pages/certificates";
 @import "sass/pages/front-page";
 @import "sass/pages/pages";
 @import "sass/pages/prepare-your-case";
 @import "sass/pages/press";
 @import "sass/pages/mediation";
+@import "sass/pages/top-ten-text";
 
 @import "sass/common/hide-stuff";
-
-.footer, .sub-footer, .footer-affiliations {
-	//display: none;
-}

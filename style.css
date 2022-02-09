@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Buttons ---------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Work+Sans:wght@600&display=swap");
 a.button {
@@ -6,7 +7,7 @@ a.button {
   margin: 0 5px 20px 5px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 12px;
   padding: 8px 10px 0 10px;
   -webkit-border-radius: 3px;
@@ -201,12 +202,20 @@ font-family: 'Roboto', sans-serif;
 /* OPEN SANS */
 /* font-family: 'Open Sans', sans-serif; */
 @font-face {
+  font-family: "Josefin Sans";
+  src: url("fonts/JosefinSans-SemiBold.eot");
+  src: url("fonts/JosefinSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/JosefinSans-SemiBold.woff2") format("woff2"), url("fonts/JosefinSans-SemiBold.woff") format("woff"), url("fonts/JosefinSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/oswald-v31-latin-regular.eot");
+  src: url("fonts/oswald-v31-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/oswald-v31-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald-v31-latin-regular.woff2") format("woff2"), url("../fonts/oswald-v31-latin-regular.woff") format("woff"), url("../fonts/oswald-v31-latin-regular.ttf") format("truetype"), url("../fonts/oswald-v31-latin-regular.svg#Oswald") format("svg");
+  src: local(""), url("fonts/oswald-v31-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/oswald-v31-latin-regular.woff2") format("woff2"), url("fonts/oswald-v31-latin-regular.woff") format("woff"), url("fonts/oswald-v31-latin-regular.ttf") format("truetype"), url("fonts/oswald-v31-latin-regular.svg#Oswald") format("svg");
   /* Legacy iOS */
 }
 /* oswald-500 - latin */
@@ -422,7 +431,10 @@ div {
   -webkit-box-sizing: border-box;
 }
 
-/* TEMP */
+.full-width {
+  max-width: 1000px !important;
+}
+
 body {
   background-image: url("https://hh.lexwebdev.com/wp-content/themes/kyfamilylawyer/images/bg_paperwork_bw.jpg") !important;
   background-attachment: fixed !important;
@@ -524,15 +536,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a
 
 body {
   line-height: 1;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-q:before, q:after {
-  content: "";
-  content: none;
 }
 
 :focus {
@@ -864,10 +867,6 @@ p, li {
 }
 
 /* Common Media Stylings --------------------------*/
-.entry-content img {
-  max-width: 100%;
-}
-
 img.alignleft {
   float: left;
   margin: 10px 25px 20px 0;
@@ -1127,6 +1126,19 @@ iframe {
   clear: right;
 }
 
+.footer-left .tz_blog_widget ul {
+  padding-left: 0;
+}
+
+.footer-left .widget-title span {
+  font-size: 2.25rem;
+}
+
+@media screen and (min-width: 576px) {
+  .footer-left .widget-title span {
+    font-size: 3rem;
+  }
+}
 body.single .front-page__affiliates, body.single .front-page__blade--from-blog {
   display: none;
 }
@@ -2709,20 +2721,13 @@ a.jp-unmute:hover {
 
 /*-----------------------------------------------------------------------------------*/
 /*  9.  Footer Styles
-/*-----------------------------------------------------------------------------------*/
-/*  TEMP! */
+/* FOOTER STYLES -----------------------------------------------------------------------------------*/
 #linkcat-7, #footer-affiliations {
   display: none;
 }
 
-/* REMOVED 
-.footer, .footer-affiliations {
-    @extend .homepage__blade;
-    margin: 0 auto;
-    max-width: $maxWidth;
-}
-*/
 .footer {
+  /* position: relative; */
   background-color: #00171F;
   color: #aaa;
 }
@@ -3330,7 +3335,7 @@ footer {
   width: 100%;
 }
 
-.hero__sidebar {
+.hero__sidebar-bg {
   border-radius: 4px;
 }
 
@@ -3364,7 +3369,7 @@ footer {
 }
 @media (min-width: 476px) {
   .hero__sidebar h2 {
-    font-size: 1.5rem;
+    font-size: 1.325rem;
   }
 }
 @media (min-width: 768px) {
@@ -3377,7 +3382,7 @@ footer {
     right: 40px;
     top: 20px;
     height: auto;
-    width: 240px;
+    width: 260px;
   }
 }
 /*-----------------------------------------------------------------------------------*/
@@ -3427,6 +3432,16 @@ footer {
   list-style: decimal;
 }
 
+.about__holly-photo {
+  border: 1px solid #ccc;
+  float: left;
+  margin: 5px 10px 5px 0;
+  width: 33%;
+  min-width: 150px;
+  max-width: 250px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 /* Archive Template --------------------------------------*/
 .search_posts {
   margin-bottom: 30px;
@@ -3451,10 +3466,8 @@ footer {
   margin-bottom: 0;
 }
 
-.full-width {
-  width: 940px !important;
-}
-
+/*
+.full-width { width: 940px !important; } */
 /* Contact Template --------------------------------------*/
 body.page-template-template-contact #primary {
   padding-bottom: 2rem;
@@ -3512,14 +3525,13 @@ label.error {
     padding:0;
 }
 */
-.homepage__blade, .front-page__blade, .front-page__affiliates, .front-page__practice-areas {
-  padding: 2rem 2rem 2.4rem 2rem;
+.mediation-certificate__pic {
   width: 100%;
 }
 
-.post-2 + h3 {
-  /* 	OTHER NOTABLE */
-  display: none;
+.homepage__blade, .front-page__blade, .front-page__affiliates, .front-page__practice-areas {
+  padding: 2rem 2rem 2.4rem 2rem;
+  width: 100%;
 }
 
 .home-callout {
@@ -3651,13 +3663,13 @@ body.home .front-page__affiliates {
   margin-bottom: 0.85rem;
 }
 
-/*
-.affiliates__list li strong {
-	color: lighten($yellowish, 10); 
-} */
 .front-page__blade {
   margin: 0 auto;
   max-width: 1000px;
+}
+
+.front-page__bear-blade {
+  padding: 0 !important;
 }
 
 .bear-blade__img {
@@ -3777,6 +3789,61 @@ body.page-id-105 .entry-content ul li {
   margin-bottom: 12px;
 }
 
+body.page-id-694 .page-header {
+  padding-bottom: 0;
+  margin-bottom: 12px;
+}
+
+figure.mediation__quote {
+  display: block;
+  margin: 0 auto 2.5rem auto;
+  width: 100%;
+}
+
+.mediation__blockquote {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  margin: 0 0 2rem 0;
+  padding: 0;
+  text-align: center;
+}
+
+blockquote::before {
+  content: open-quote;
+  color: #ccc;
+  font-size: 5rem;
+  display: inline;
+  font-family: "Courier", serif;
+  line-height: 1;
+}
+
+blockquote::after {
+  content: close-quote;
+  color: #ccc;
+  display: inline;
+  font-size: 5rem;
+  font-family: "Courier", serif;
+  line-height: 1;
+}
+
+blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+
+blockquote p {
+  display: inline;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1 !important;
+}
+
+figcaption {
+  font-family: "Times", serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  width: 90%;
+}
+
 .mediation__bear {
   border: 1px solid #ccc;
   width: 310px;
@@ -3792,6 +3859,115 @@ body.page-id-105 .entry-content ul li {
   margin-left: 7px;
 }
 
+.page-id-713 .content.wrapper {
+  position: relative;
+}
+
+.page-id-713 .page-header {
+  display: none !important;
+}
+
+.page-id-713 .content {
+  background-image: url("http://hollyh8.sg-host.com/wp-content/uploads/2022/02/TOP-10-bg-final.jpg");
+}
+
+.post-713 .entry-content {
+  padding-top: 1.85rem;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.top-ten__hdr, .top-ten__h2, .top-ten__h3 {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+}
+
+.top-ten__hdr {
+  font-size: 2rem;
+  padding: 0 5px;
+}
+
+.top-ten__hdr, .top-ten__list-item {
+  color: #fff;
+}
+
+.top-ten__list {
+  list-style-position: inside;
+  padding: 0 7px;
+}
+
+.top-ten__list-item {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 1.075rem;
+  margin-bottom: 0.75rem;
+}
+
+.top-ten__footer {
+  background-color: #c00;
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  min-height: 120px;
+  padding-top: 1.25rem;
+  text-align: center;
+  width: 100%;
+}
+
+.top-ten__h2, .top-ten__h3 {
+  color: #fff;
+}
+
+.top-ten__h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.top-ten__h3 {
+  font-size: 1.15rem;
+}
+
+@media screen and (min-width: 576px) {
+  .top-ten__list {
+    padding: 0 1rem;
+  }
+
+  .top-ten__h2 {
+    font-size: 2rem;
+  }
+
+  .top-ten__h3 {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .top-ten__hdr {
+    font-size: 2.5rem;
+  }
+
+  .top-ten__list {
+    padding: 0 0 0 10px;
+  }
+
+  .top-ten__list-item {
+    font-size: 1.25rem;
+  }
+
+  .top-ten__list {
+    padding: 0 7.5rem;
+  }
+
+  .top-ten__h2 {
+    font-size: 2.25rem;
+  }
+
+  .top-ten__h3 {
+    font-size: 2rem;
+  }
+}
 /*body*/
 .page-template-default, body.page-template-template-contact, body.error404 {
   /*

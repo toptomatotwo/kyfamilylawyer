@@ -1,130 +1,18 @@
 <!DOCTYPE html>
-
-<!-- BEGIN html -->
 <html <?php language_attributes(); ?>>
-<!-- An Orman Clark design (http://www.premiumpixels.com) - Proudly powered by WordPress (http://wordpress.org) -->
-
-<!-- BEGIN head -->
-
 <head>
-    <!-- Meta Tags -->
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-	<!-- Title -->
 	<title><?php wp_title(''); ?></title>
-
-	<!-- Stylesheets -->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
-
 	<!-- RSS & Pingbacks -->
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?> RSS Feed" href="<?php if (get_option('tz_feedburner')) { echo get_option('tz_feedburner'); } else { bloginfo( 'rss2_url' ); } ?>" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
-    <!-- <script src="https://use.typekit.com/gju8fgs.js"></script> -->
-    <!-- <script>try{Typekit.load();}catch(e){}</script> -->
-    <!-- <script src="https://kylawyer.test/wp/wp-content/themes/kyfamilylawyer/js/kfl.js"></script> -->
-    <style type="text/css">
-
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Work+Sans:wght@600&display=swap');
-/**
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Work Sans', sans-serif;
-*/
-
-.page-id-713 .content.wrapper {
-    position: relative;
-}
-
-.page-id-713 .page-header {
-    display: none !important;
-}
-
-/*body*/.page-id-713 .post-713::before {
-    content:"TEST";
-    position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-image: url('http://hollyh8.sg-host.com/wp-content/uploads/2022/01/pexels-photo-1738626.jpeg');
-  filter: grayscale(100%) brightness(25%);
-}
-
-.post-713 .entry-content {
-    padding-top: 2.5rem;
-    padding-bottom: 0;
-    position: relative;
-}
-
-.top-ten__hdr, .top-ten__list-item {
-    color: #fff
-}
-
-.top-ten__hdr, .top-ten__h2, .top-ten__h3 {
-    color: #fff;
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
-}
-
-.top-ten__hdr {
-    font-size: 2.5rem;
-}
-
-.top-ten__list {
-    padding: 0 7.5rem;
-}
-
-.top-ten__list-item {
-    font-family: "Oswald";
-    font-weight: 500;
-    font-size:1.25rem;
-    margin-bottom: .75rem;
-}
-
-.top-ten__footer {
-    background-color: #c00;
-    border-top: 10px solid white;
-    border-bottom: 10px solid white;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    min-height: 120px;
-    padding-top: 1.25rem;
-    text-align: center;
-    width: 100%;
-}
-
-.top-ten__h2, .top-ten__h3 {
-    color: #fff;
-}
-
-.top-ten__h2 {
-    font-size: 2rem;
-	text-transform: uppercase;
-}
-
-.top-ten__h3 {
-    font-size: 1.5rem;
-}
-
-
-/* PUT THESE IN RESPECT FILES*/
-
-
-footer {
-    position: relative;
-}
-
-.full-width {
-    width: 1000px !important;
-}
-    </style>
 	<?php wp_head(); ?>
-<!-- END head -->
+
 </head>
-<!-- BEGIN body -->
 <body <?php body_class(); ?>>
-    <?php // Load our custom background image
-        // gain access to post id
+    <?php
         global $wp_query;
         if( is_home() && !is_tax( 'portfolio-type' ) ) {
             $postid = get_option('page_for_posts');
@@ -133,11 +21,8 @@ footer {
         } else {
             $postid = $wp_query->post->ID;
         }
-                // Get the unique background image
-        
     ?>
-
-	<!-- BEGIN #container -->
+    <!-- BEGIN #container -->
 	<div id="container" class="container">
         <!-- BEGIN #header -->
 		<header id="header" class="clearfix header">

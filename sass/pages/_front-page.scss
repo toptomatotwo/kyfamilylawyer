@@ -3,10 +3,6 @@
 	width: 100%;
 }	
 
-.post-2 + h3 { /* 	OTHER NOTABLE */
-	display: none; 
-}
-
 .home-callout {
 	display: grid;
 	grid-template-rows: auto auto;
@@ -47,7 +43,6 @@
 
 
 .front-page__practice-areas {
-	//background-color: lighten(#0D1B1E, 2);
 	@extend .homepage__blade;
 	background-color: $baseBlue;
 	display: flex;
@@ -62,7 +57,6 @@
 	}
 
 	.practice-areas__list {
-		//color: $honeyDew;
 		color: $white;
 		display: block;
 		font-family: 'Open Sans', Sans;
@@ -101,9 +95,7 @@ body.home .front-page__affiliates {
 }
 
 .front-page__affiliates {
-	//background-color: $liteTan;
 	@extend .homepage__blade; 
-	//background-color: darken($darkMaroon, 10);
 	background-color: $baseBlue;
 	flex-flow: column;
 	align-items: center;
@@ -129,11 +121,10 @@ body.home .front-page__affiliates {
 	/*ul*/.affiliates__list {
 		margin-top: 0;
 		padding: 0;
-		//font-family: 'Cabin', sans-serif;
+		
 		font-family: 'Arial', sans-serif;
 		font-size: 1rem;
 		list-style-type: none;
-		//width: 85%;
 		width: 100%;
 	}
 
@@ -142,20 +133,15 @@ body.home .front-page__affiliates {
 	 	line-height: 1.4;
 	 	margin-bottom: .85rem;
 	}
-
-	/*
-	.affiliates__list li strong {
-		color: lighten($yellowish, 10); 
-	} */
-
+	
 	.front-page__blade {
 		@extend .homepage__blade;
     	margin: 0 auto;
     	max-width: $maxWidth;
 	}
 
-	.front-page__blade--from-blog {
-		
+	.front-page__bear-blade 			{
+		padding: 0 !important
 	}
 	
 	.bear-blade__img {

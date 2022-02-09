@@ -1,0 +1,112 @@
+
+.page-id-713 .content.wrapper {
+    position: relative;
+}
+
+.page-id-713 .page-header {
+    display: none !important;
+}
+
+
+.page-id-713 .content {
+  background-image: url('http://hollyh8.sg-host.com/wp-content/uploads/2022/02/TOP-10-bg-final.jpg');
+}
+
+.post-713 .entry-content {
+    padding-top: 1.85rem;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.top-ten__hdr, .top-ten__h2, .top-ten__h3 {
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.top-ten__hdr {
+    font-size: 2rem;
+    padding: 0 5px;
+}
+
+.top-ten__hdr, .top-ten__list-item {
+    color: #fff;
+}
+
+.top-ten__list {
+    list-style-position: inside;
+    padding: 0 7px;
+}
+
+.top-ten__list-item {
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size: 1.075rem;
+    margin-bottom: .75rem;
+}
+
+.top-ten__footer {
+    background-color: #c00;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    min-height: 120px;
+    padding-top: 1.25rem;
+    text-align: center;
+    width: 100%;
+}
+
+.top-ten__h2, .top-ten__h3 {
+    color: #fff;
+}
+
+.top-ten__h2 {
+    font-size: 1.5rem;
+	text-transform: uppercase;
+}
+
+.top-ten__h3 {
+    font-size: 1.15rem;
+}
+
+@media screen and (min-width: 576px) {
+    .top-ten__list {
+        padding: 0 1rem
+    }
+    
+    .top-ten__h2 {
+        font-size: 2rem;
+    }
+    
+    .top-ten__h3 {
+        font-size: 1.75rem;
+    }    
+}
+
+@media screen and (min-width: 768px) {
+    .top-ten__hdr {
+        font-size: 2.5rem;
+    }
+    
+    .top-ten__list {
+        padding: 0 0 0 10px;
+    }
+
+    .top-ten__list-item {
+        font-size: 1.25rem;
+    }
+    
+    .top-ten__list {
+        padding: 0 7.5rem;
+    }
+    
+    .top-ten__h2 {
+        font-size: 2.25rem;
+    }
+    
+    .top-ten__h3 {
+        font-size: 2rem;
+    }
+}

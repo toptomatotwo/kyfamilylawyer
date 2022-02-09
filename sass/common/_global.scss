@@ -11,9 +11,8 @@ div { box-sizing: border-box; }
     -webkit-box-sizing: border-box;
 }
 
-/* TEMP */
-body.blog .content {
-  //display: none;
+.full-width {
+  max-width: 1000px !important;
 }
 
 body {

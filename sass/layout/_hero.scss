@@ -5,22 +5,19 @@
 	padding-left: $homepageBladeSidePadding;
 	padding-right: $homepageBladeSidePadding;
 	position: relative;
-
 }
 
 .hero__main-img {
 	width: 100%;
 }
 
-.hero__sidebar {
-	//padding-left: 25px;
+.hero__sidebar-bg {
 	border-radius: 4px;
 }
 
 .hero__sidebar-bg {
 	background-color: #001;
 	opacity: .6; 
-
 }
 
 .hero__sidebar h2 {
@@ -28,7 +25,6 @@
 	font-weight: bold;
 	margin-bottom: 12px;
 	padding: 1rem;
-  	//text-shadow: 0px 1px 6px #FFF;
   	font-size: 1.2rem;
 }
 
@@ -51,7 +47,7 @@
 
 @media (min-width: 476px) {
 	.hero__sidebar h2 {
-		font-size: 1.5rem;
+		font-size: 1.325rem;
 	}
 }
 
@@ -65,6 +61,6 @@
 		right: 40px;
 		top: 20px;
 		height: auto;
-		width: 240px;
+		width: 260px;
 	}
 }

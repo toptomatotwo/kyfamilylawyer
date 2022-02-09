@@ -14,7 +14,7 @@
                     ?>
                         <img src="/wp-content/uploads/2020/01/slide_holly.jpg" class="hero__main-img">
             		<!--BEGIN .entry-content -->
-            		<div class="entry-content hello hero__sidebar">
+            		<div class="entry-content hero__sidebar">
             			<?php the_content(); ?>
             		<!--END .entry-content -->
             		</div>
