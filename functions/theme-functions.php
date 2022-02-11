@@ -126,24 +126,6 @@ if ( !function_exists( 'tz_body_class' ) ) {
 
 
 /*-----------------------------------------------------------------------------------*/
-/* Add Favicon
-/*-----------------------------------------------------------------------------------*/
-
-if ( !function_exists( 'tz_favicon' ) ) {
-    function tz_favicon() {
-    	$shortname = get_option('tz_shortname');
-    	if (get_option($shortname . '_custom_favicon') != '') {
-    	echo '<link rel="shortcut icon" href="'. get_option('tz_custom_favicon') .'"/>'."\n";
-    	}
-    	else { ?>
-    	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri() ?>/admin/images/favicon.ico" />
-    	<?php }
-    }
-    add_action('wp_head', 'tz_favicon');
-}
-
-
-/*-----------------------------------------------------------------------------------*/
 /* Show analytics code in footer */
 /*-----------------------------------------------------------------------------------*/
 

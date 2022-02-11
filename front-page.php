@@ -7,14 +7,14 @@
         <!--BEGIN .hentry-->
         <div <?php post_class('hero__wrapper') ?> id="post-<?php the_ID(); ?>">
 
-            <img src="http://hollyh8.sg-host.com/wp-content/uploads/2020/01/slide_holly.jpg" class="hero__main-img">
+            <img src="https://hollyh8.sg-host.com/wp-content/uploads/2020/01/slide_holly.jpg" class="hero__main-img">
             <!--BEGIN .entry-content -->
             <div class="entry-content hero__sidebar">
                 <?php the_content(); ?>
             </div><!--END .entry-content -->
             <div class="front-page__text-wrap"><p class="front-page_-text">Family Law is what I do. If you have found my page it probably means that you have a legal issue related to you , your spouse your partner, your children or your relatives. 
 Our family court is structured around a 1 court 1 family principal divided into separate dockets. The dockets are divided into Circuit, Parternity, Juvenile, Status and EPO/DVO. Whatever docket you might appear on your judge will be consistent for that particular family court proceeding. I appear regularly on every family court docket. Experience matters.</p>
-<a class="button small white" href="/about/">Find Out More</a>
+<a class="homepage__about" href="/about/">Find Out More</a>
             </div><!-- end font page text wrap -->
 
         <!--END .hentry-->

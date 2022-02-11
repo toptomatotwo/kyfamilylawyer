@@ -1,6 +1,27 @@
 @charset "UTF-8";
+/* LINK COLORS */
+/* $blue-link: #2660a4; */
+/* Consider These */
+/* TAN & RED */
+/* POSTCARD COLORS */
+/*newColor Scheme TAN & MAROON*/
+/* NEW BLUE */
 /* Buttons ---------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Work+Sans:wght@600&display=swap");
+.homepage__about {
+  background-color: white;
+  border: 1px solid #121212;
+  color: #212121;
+  font-family: "Cinzel", sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  padding: 8px 10px 6px;
+}
+
+.homepage__about:hover {
+  color: #A63838;
+}
+
 a.button {
   height: 20px;
   display: inline-block;
@@ -183,13 +204,6 @@ a:hover.button.black {
   border: 1px solid #2c2c2c;
 }
 
-/* LINK COLORS */
-/* $blue-link: #2660a4; */
-/* Consider These */
-/* TAN & RED */
-/* POSTCARD COLORS */
-/*newColor Scheme TAN & MAROON*/
-/* NEW BLUE */
 /* DROID SANS & SERIF! */
 /* <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
 font-family: 'Droid Serif', serif; */
@@ -380,7 +394,7 @@ textarea {
   background: #f7f7f8;
   border: 1px solid #f7f7f8;
   color: #b2b2b6;
-  padding: 5px 10px;
+  padding: 10px 10px;
   width: 230px;
 }
 
@@ -391,7 +405,7 @@ button,
   color: #fff;
   cursor: pointer;
   font-family: Georgia, "Times New Roman", Times, serif;
-  padding: 5px 10px;
+  padding: 10px 16px;
   width: auto;
   -webkit-transition: color 0.2s linear, background 0.2s linear, border-color 0.2s linear;
   -moz-transition: color 0.2s linear, background 0.2s linear, border-color 0.2s linear;
@@ -738,10 +752,22 @@ p, li {
   font-family: "Cinzel", serif;
   font-weight: bold;
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 2rem;
   font-variant: small-caps;
 }
 
+@media screen and (min-width: 560px) {
+  /*h1*/
+  .page-title {
+    font-size: 2.45rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  /*h1*/
+  .page-title {
+    font-size: 2.85rem;
+  }
+}
 /* Alerts -----------------------------------*/
 .alert {
   padding: 12px 5% 12px 5%;
@@ -1499,7 +1525,12 @@ body.blog .page-header, body.archive .page-header {
 
 body.blog .page-title, body.archive .page-title {
   line-height: 1.4;
-  font-size: 2.85rem;
+  /* font-size: 2.85rem; */
+  font-size: 2rem;
+}
+
+.text-widget p {
+  font-size: 16px;
 }
 
 body.blog #primary, body.archive #primary {
@@ -1534,7 +1565,7 @@ body.blog h2 .post-format, body.archive h2 .post-format {
 }
 
 body.blog h2 .post-format:hover, body.archive h2 .post-format:hover {
-  letter-spacing: 1px;
+  color: #FFC107;
 }
 
 body.blog .featured-image, body.archive .featured-image {
@@ -1560,14 +1591,6 @@ body.blog .entry-meta .post-format, body.archive .entry-meta .post-format {
 body.blog .entry-content p, body.archive .entry-content p {
   font-size: 1.1rem;
   line-height: 1.5;
-}
-
-body.blog .post-format {
-  /* this element is empty! */
-}
-
-body.blog .front-page__blade--affiliates, body.blog .front-page__blade--from-blog, body.archive .front-page__blade--affiliates, body.archive .front-page__blade--from-blog {
-  display: none;
 }
 
 body.blog strong, body.archive strong {
@@ -1637,7 +1660,11 @@ body.blog .front-page__affiliates, body.archive .front-page__affiliates {
     font-size: 2.75rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
+  body.blog h2 .post-format:hover, body.archive h2 .post-format:hover {
+    letter-spacing: 1px;
+  }
+
   body.blog .page-title, body.archive .page-title {
     font-size: 3rem;
   }
@@ -1689,6 +1716,7 @@ body.blog .aside {
 #sidebar.aside #text-5 .textwidget {
   /*ABOUT HOLLY*/
   font-family: "Cabin", sans;
+  font-size: 1rem;
   line-height: 1.4;
   width: 100%;
 }
@@ -2921,21 +2949,22 @@ footer {
   flex-flow: column;
   margin: 13px 0;
   text-transform: uppercase;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.185);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /*span*/
 .header-top__logo-title {
   font-size: 22px;
-  font-family: "Cinzel", serif;
+  /* font-family: "Cinzel", serif; */
+  font-family: "Josefin Sans", sans-serif;
   margin-bottom: 8px;
   letter-spacing: 0.05rem;
 }
 
 /*span*/
 .header-top__logo-tagline {
-  font-size: 19px;
-  font-family: "proxima_novaregular", sans-serif;
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .header__caption-wrap {
@@ -3160,7 +3189,6 @@ footer {
     width: 100%;
   }
 }
-/* @import "sass/layout/nav"; */
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -3277,15 +3305,17 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
+
+  .mobile-homepage-link {
+    display: none !important;
+  }
 }
 @media screen and (max-width: 768px) {
   .topnav a, .dropdown .dropbtn {
-    /* .topnav a:not(:first-child), .dropdown .dropbtn { */
     display: none;
   }
 
   .topnav a.icon {
-    /* float: right; */
     display: block;
   }
 }
@@ -3296,10 +3326,6 @@ footer {
 
   .topnav.responsive .icon {
     text-align: center;
-    /*  
-    position: absolute;
-      right: 0;
-      top: 0; */
   }
 
   .topnav.responsive a {
@@ -3329,6 +3355,7 @@ footer {
   padding-left: 1.2rem;
   padding-right: 1.2rem;
   position: relative;
+  padding-bottom: 3rem;
 }
 
 .hero__main-img {
@@ -3475,6 +3502,7 @@ body.page-template-template-contact #primary {
 
 .contactform {
   margin-left: 0;
+  padding-left: 0;
 }
 
 .contactform li {
@@ -3483,48 +3511,43 @@ body.page-template-template-contact #primary {
 
 .contactform li label {
   display: block;
-  margin-bottom: 10px;
+}
+
+.contactform li input[type=text], .contactform li textarea {
+  border: 1px solid #ccc;
+  width: 90%;
 }
 
 .contactform li input[type=text] {
-  width: 300px;
   margin-bottom: 15px;
 }
 
 .contactform li textarea {
-  width: 96.5%;
   height: 200px;
   margin-bottom: 15px;
 }
 
 .contactform li button {
-  float: right;
-  font-size: 13px;
+  float: left;
+  font-size: 16px;
 }
 
 label.error {
   color: red;
 }
 
-/* MOVED TO PAGES
-.home-callout .simpleimage, .home-callout .widget_simpleimage {
-    display:inline;
+@media screen and (min-width: 576px) {
+  /*ul*/
+  .contactform {
+    padding-left: 20px;
+  }
 }
-.home-callout {
-    text-align:center;
+@media screen and (min-width: 769px) {
+  /*ul*/
+  .contactform {
+    padding-left: 40px;
+  }
 }
-.home-callout .widget_simpleimage {
-    margin-right:16px;
-}
-.home-callout .simpleimage img, .home-callout .widget_simpleimage img {
-    vertical-align:baseline;
-    max-width:456px;
-}
-
-.home-callout .widget a {
-    padding:0;
-}
-*/
 .mediation-certificate__pic {
   width: 100%;
 }
@@ -3931,6 +3954,10 @@ figcaption {
 }
 
 @media screen and (min-width: 576px) {
+  .top-ten__hdr {
+    font-size: 2.25rem;
+  }
+
   .top-ten__list {
     padding: 0 1rem;
   }

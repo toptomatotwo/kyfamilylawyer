@@ -8,7 +8,10 @@
 	<!-- RSS & Pingbacks -->
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?> RSS Feed" href="<?php if (get_option('tz_feedburner')) { echo get_option('tz_feedburner'); } else { bloginfo( 'rss2_url' ); } ?>" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<?php wp_head(); ?>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <?php wp_head(); ?>
 
 </head>
 <body <?php body_class(); ?>>

@@ -1,5 +1,5 @@
-@import "sass/common/buttons";
 @import "sass/common/color_palette";
+@import "sass/common/buttons";
 @import "sass/common/fonts";
 @import "sass/common/forms";
 @import "sass/common/global";
@@ -26,11 +26,9 @@
 @import "sass/components/jplayer";
 @import "sass/components/portfolio";
 
-
 @import "sass/layout/footer";
-@import "sass/layout/new-header";
-/* @import "sass/layout/nav"; */
-@import "sass/layout/new-nav";
+@import "sass/layout/header";
+@import "sass/layout/nav";
 
 @import "sass/layout/hero";
 @import "sass/layout/misc-temp";

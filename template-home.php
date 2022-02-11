@@ -6,13 +6,7 @@
 
             	<!--BEGIN .hentry-->
             	<div <?php post_class('hero__wrapper') ?> id="post-<?php the_ID(); ?>">
-
-                    <?php
-                        $tz_slider = get_option('tz_image_slider');
-                        if( $tz_slider == 'true' ) { /*get_template_part('includes/home-imageslider');*/ }
-
-                    ?>
-                        <img src="/wp-content/uploads/2020/01/slide_holly.jpg" class="hero__main-img">
+                    <img src="/wp-content/uploads/2020/01/slide_holly.jpg" class="hero__main-img">
             		<!--BEGIN .entry-content -->
             		<div class="entry-content hero__sidebar">
             			<?php the_content(); ?>

@@ -1,4 +1,17 @@
 /* Buttons ---------------------------------------*/
+.homepage__about {
+    background-color: white;
+    border: 1px solid #121212;
+    color: $primary-text-color;
+    font-family: "Cinzel", sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    padding: 8px 10px 6px;
+}
+
+.homepage__about:hover {
+    color: $maroonHdr;
+}
 
 a.button {
     height: 20px;
