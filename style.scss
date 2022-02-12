@@ -9,8 +9,8 @@
 @import "sass/common/typography";
 @import "sass/common/variables";
 
-@import "sass/common/alerts_tabs_toggle";
-@import "sass/common/common_media";
+/* @import "sass/common/alerts_tabs_toggle"; */
+/* @import "sass/common/common_media"; */
 @import "sass/common/pagination";
 @import "sass/common/shortcodes";
 
@@ -18,12 +18,13 @@
 @import "sass/components/blog";
 @import "sass/components/blog_archive";
 @import "sass/components/_blog-cat-date-aside";
+@import "sass/components/_blog-media";
 @import "sass/components/slider";
 @import "sass/components/widgets";
 
 @import "sass/components/blog_comments";
-@import "sass/components/isotope";
-@import "sass/components/jplayer";
+/* @import "sass/components/isotope"; */
+/* @import "sass/components/jplayer"; */
 @import "sass/components/portfolio";
 
 @import "sass/layout/footer";

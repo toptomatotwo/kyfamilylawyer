@@ -1,4 +1,8 @@
-
+/*h2*/.prepare-case__hdr {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.25rem;
+	margin: 1.25rem 0;
+}
 
 /*ul*/.prepare-your-case-list {
 	font-family: 'Cabin', sans-serif;
@@ -9,3 +13,15 @@
 /*ul*/.prepare-your-case-list li {
 	margin-bottom: .85rem;
 }
+
+@media screen and (min-width: 567px) {
+/*h2*/.prepare-case__hdr {
+	font-size: 1.4rem;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	/*h2*/.prepare-case__hdr {
+		font-size: 1.75rem;
+		}
+	}
