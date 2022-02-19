@@ -134,7 +134,9 @@ body.single .featured-image img {
     padding: 3px 5px 2px;
 }
 
-.more-link:hover { background-color: $hover; color: #000;}
+.more-link:hover { 
+    @extend .buttonHover; 
+}
 
 .entry-meta {
     font-family: 'Cabin', sans-serif;

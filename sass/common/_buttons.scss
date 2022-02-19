@@ -1,4 +1,9 @@
 /* Buttons ---------------------------------------*/
+.buttonHover {
+	background-color: $hover; 
+	color: #000;
+}
+
 .homepage__about {
     background-color: white;
     border: 1px solid #121212;
@@ -10,7 +15,7 @@
 }
 
 .homepage__about:hover {
-    color: $maroonHdr;
+    @extend .buttonHover;
 }
 
 a.button {

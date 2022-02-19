@@ -6,13 +6,12 @@
       <ul class="affiliates__list">
             <li class="affiliates__list-item"><strong>Kentucky Bar Association</strong>, Member Diversity, Equity, Inclusion Committee, Diversity Summit for students, Panelist Ky. Law update on wellness and lawyers and diversity, winter 2019</li>
             <li class="affiliates__list-item"><strong>Louisville Bar Association</strong>, Human Rights Section Co Chair 2014 - 2015 and Chair 2013 – 2014 and Family Law Section Chair 2010-2011</li>
+            <li class="affiliates__list-item"><strong><a class="memberships__link" href="https://www.mediate.com/member/A.-Holland-Houston/38620" target="_blank">Mediate.com</a></strong>, Member</li>
             <li class="affiliates__list-item"><strong>Restorative Justice and Volunteers of America Advisory Committee</strong></li>
-            <li class="affiliates__list-item"><strong>Today’s Woman</strong>, Columnist</li>
             <li class="affiliates__list-item"><strong>Warrior Women Win</strong>, Founder</li>
-            <li class="affiliates__list-item"><strong>Women Lawyer’s Association</strong>, Member</li>
+            <li class="affiliates__list-item"><strong>Women Lawyer’s Association</strong>, Board Member</li>
             <li class="affiliates__list-item"><strong>Seneca High School</strong>, Mentor</li>
             <li class="affiliates__list-item"><strong>Kentucky Opera</strong>, Panelist</li>
-            <li class="affiliates__list-item"><strong>Fayette County Bar Association</strong></li>
             <li class="affiliates__list-item"><strong>ACLU People Power</strong></li>
             <li class="affiliates__list-item"><strong>Facilitator and Co Creator Greater Louisville Outstanding Women</strong> “GetLit(eracy)WithGLOW”</li>
             <li class="affiliates__list-item"><strong>Louisville CEDAW Coalition</strong></li>
