@@ -41,6 +41,14 @@
 	margin-bottom: 2.2rem;
 }
 
+.postcard-promo {
+	display: inline;
+}
+
+.postcard-promo-img {
+	width: 100%;
+	height: auto;
+}
 
 .front-page__practice-areas {
 	@extend .homepage__blade;
